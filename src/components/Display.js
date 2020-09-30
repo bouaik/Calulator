@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
 function Display({ result }) {
     return (
@@ -9,8 +9,8 @@ function Display({ result }) {
     )
 }
 
-Display.PropTypes = {
-    result: PropTypes.string,
+Display.propTypes = {
+    result: propTypes.string,
 };
 Display.defaultProps = {
     result: '0',
