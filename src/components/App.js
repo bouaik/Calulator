@@ -5,9 +5,12 @@ import Display from './Display';
 
 function App() {
   return (
-    <div className="App">
-      <Display />
-      <ButtonPanel />
+    <div className="container">
+      <div className="App">
+        <h1 className="title">Calculator</h1>
+        <Display />
+        <ButtonPanel />
+      </div>
     </div>
   );
 }
