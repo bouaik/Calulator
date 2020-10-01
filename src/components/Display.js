@@ -4,8 +4,8 @@ import propTypes from 'prop-types';
 function Display({ result }) {
   return (
     <div>
-      <div className='display'>
-        <h4 className='result'>
+      <div className="display">
+        <h4 className="result">
           {result}
         </h4>
       </div>
