@@ -30,10 +30,31 @@
   font-size: 55px;
 }
 /* ButtonPanel component */
-.button-panel {
+.group {
   display: flex;
+  height: 100px;
+}
+/* Butoon component */
+button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 1.8em;
+  color: black;
+  border: 1px solid rgb(214, 210, 210);
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  opacity: 0.8;
 }
 
-.group {
-  height: 100px;
+.wide {
+  width: 50%;
+}
+
+.normal {
+  width: 25%;
 }
