@@ -16,6 +16,7 @@
   margin-top: 40px;
   text-transform: uppercase;
 }
+
 /* Display component */
 .display {
   background-color: grey;
@@ -31,11 +32,13 @@
   font-weight: bold;
   font-size: 55px;
 }
+
 /* ButtonPanel component */
 .group {
   display: flex;
   height: 100px;
 }
+
 /* Butoon component */
 button {
   width: 100%;
@@ -49,6 +52,7 @@ button {
   cursor: pointer;
   outline: none;
 }
+
 button:hover {
   opacity: 0.8;
 }
