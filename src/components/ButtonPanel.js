@@ -4,33 +4,33 @@ import Button from './Button';
 function ButtonPanel() {
   return (
     <div className="button-panel">
-      <div className="group1">
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
+      <div className="group">
+        <Button name="AC" color="#dfdfdf" />
+        <Button name="+/-" color="#dfdfdf" />
+        <Button name="%" color="#dfdfdf" />
         <Button name="÷" />
       </div>
-      <div className="group2">
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="X" />
+      <div className="group">
+        <Button name="7" color="#dfdfdf" />
+        <Button name="8" color="#dfdfdf" />
+        <Button name="9" color="#dfdfdf" />
+        <Button name="x" />
       </div>
-      <div className="group3">
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
+      <div className="group">
+        <Button name="4" color="#dfdfdf" />
+        <Button name="5" color="#dfdfdf" />
+        <Button name="6" color="#dfdfdf" />
         <Button name="-" />
       </div>
-      <div className="group4">
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
+      <div className="group">
+        <Button name="1" color="#dfdfdf" />
+        <Button name="2" color="#dfdfdf" />
+        <Button name="3" color="#dfdfdf" />
         <Button name="+" />
       </div>
-      <div className="group5">
-        <Button name="0" />
-        <Button name="." />
+      <div className="group">
+        <Button name="0" color="#dfdfdf" wide />
+        <Button name="." color="#dfdfdf" />
         <Button name="=" />
       </div>
     </div>

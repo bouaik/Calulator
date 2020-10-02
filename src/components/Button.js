@@ -1,16 +1,21 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-function Button({ name }) {
+function Button({ name, color, wide }) {
   return (
-    <div>
-      <button type="button">{name}</button>
-    </div>
+    <button type="button" className={wide ? 'wide' : 'normal'} style={{ backgroundColor: color }}>{name}</button>
   );
 }
 
 Button.propTypes = {
-    name: propTypes.string, // eslint-disable-line
+  name: PropTypes.string.isRequired,
+  color: PropTypes.string,
+  wide: PropTypes.bool,
+};
+
+Button.defaultProps = {
+  color: 'orange',
+  wide: false,
 };
 
 export default Button;
