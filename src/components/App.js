@@ -21,11 +21,15 @@ class App extends Component {
 
 
   render() {
+    const defaultDisplay = '0';
+    const { next, total } = this.state;
+
+    const result = next || total || defaultDisplay;
     return (
       <div className="container" >
         <div className="App">
           <h1 className="title">Calculator</h1>
-          <Display />
+          <Display result={result} />
           <ButtonPanel />
         </div>
       </div>
