@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate'; // eslint-disable-line
 
-function App() {
-  return (
-    <div className="container">
-      <div className="App">
-        <h1 className="title">Calculator</h1>
-        <Display />
-        <ButtonPanel />
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  handleClick = buttonName => {
+    this.setState(calculate(this.state, buttonName)); // eslint-disable-line
+  };
+
+  render() {
+    const defaultDisplay = '0';
+    const { next, total } = this.state;
+
+    const result = next || total || defaultDisplay;
+    return (
+      <div className="container">
+        <div className="App">
+          <h1 className="title">Calculator</h1>
+          <Display result={result} />
+          <ButtonPanel clickHandler={this.handleClick} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
