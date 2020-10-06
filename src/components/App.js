@@ -30,7 +30,7 @@ class App extends Component {
         <div className="App">
           <h1 className="title">Calculator</h1>
           <Display result={result} />
-          <ButtonPanel />
+          <ButtonPanel clickHandler={this.handleClick} />
         </div>
       </div>
     );
