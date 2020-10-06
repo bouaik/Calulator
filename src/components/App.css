@@ -1,0 +1,66 @@
+/* App component */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+/* Display component */
+.display {
+  background-color: grey;
+  height: 100px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.result {
+  color: white;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+/* ButtonPanel component */
+.group {
+  display: flex;
+  height: 100px;
+}
+
+/* Butoon component */
+button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 1.8em;
+  color: black;
+  border: 1px solid rgb(214, 210, 210);
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.wide {
+  width: 50%;
+}
+
+.normal {
+  width: 25%;
+}
