@@ -1,7 +1,7 @@
 import operate from './operate';
 /* eslint-disable no-param-reassign */
 const calculate = ({ total, next, operation }, buttonName) => {
-  const operators = ['+', '-', '÷', 'x', '%', "="];
+  const operators = ['+', '-', '÷', 'x', '%', '='];
 
   if (buttonName === 'AC') {
     total = 0;
