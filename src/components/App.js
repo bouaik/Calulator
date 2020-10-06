@@ -6,19 +6,18 @@ import calculate from '../logic/calculate'; // eslint-disable-line
 
 class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       total: null,
       next: null,
       operation: null,
-    }
+    };
   }
 
   handleClick = buttonName => {
-    this.setState(calculate(this.state, buttonName));
+    this.setState(calculate(this.state, buttonName)); // eslint-disable-line
   };
-
 
   render() {
     const defaultDisplay = '0';
@@ -26,7 +25,7 @@ class App extends Component {
 
     const result = next || total || defaultDisplay;
     return (
-      <div className="container" >
+      <div className="container">
         <div className="App">
           <h1 className="title">Calculator</h1>
           <Display result={result} />
