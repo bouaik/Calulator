@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ name, color, wide }) {
+function Button({ name, color, wide, clickHandler }) {
   return (
-    <button type="button" className={wide ? 'wide' : 'normal'} style={{ backgroundColor: color }}>{name}</button>
+    <button type="button" className={wide ? 'wide' : 'normal'} onClick={() => clickHandler(name)} style={{ backgroundColor: color }}>{name}</button>
   );
 }
 
