@@ -5,6 +5,17 @@ import Display from './Display';
 import calculate from '../logic/calculate'; // eslint-disable-line
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    }
+  }
+
+
   render() {
     return (
       <div className="container" >
